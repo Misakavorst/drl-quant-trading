@@ -1,0 +1,52 @@
+# ElegantRL (不再使用)
+ElegantRL-master/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Outputs (训练结果)
+outputs/
+backend/outputs/
+*.pth
+*.npz
+*.zip
+
+# Logs
+*.log
+logs/
+backend/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
