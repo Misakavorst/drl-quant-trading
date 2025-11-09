@@ -141,11 +141,11 @@ class DataService:
         # Get close array
         close_ary = close_df.values
         
-        # Prepare raw data for frontend (first 20 rows as sample)
+        # Prepare raw data for frontend (all data)
         raw_data = []
         dates = close_df.index.strftime('%Y-%m-%d').tolist()
         
-        for i, date_str in enumerate(dates[:20]):  # First 20 rows
+        for i, date_str in enumerate(dates):  # All rows
             for symbol, stock_id in symbol_to_id.items():
                 col_idx = stock_ids.index(stock_id)
                 raw_data.append({

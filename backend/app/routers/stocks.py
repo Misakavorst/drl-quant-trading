@@ -19,7 +19,7 @@ router = APIRouter(prefix="/stocks", tags=["stocks"])
 async def add_stocks(request: StockListRequest):
     """
     Add stocks and fetch data from database
-    Returns sample data (first 20 rows) for display
+    Returns all data for the specified date range
     """
     try:
         logger.info(f"Fetching data for symbols: {request.symbols}")
