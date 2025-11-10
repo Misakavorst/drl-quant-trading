@@ -1,0 +1,80 @@
+{
+  "jobId": "1cd0ac0d-1846-4c7d-826f-68486bda1c68",
+  "results": [
+    {
+      "algorithm": "PPO",
+      "status": "completed",
+      "metrics": {
+        "totalReward": 233195.52780599636,
+        "sharpeRatio": 1.4706117077706766,
+        "maxDrawdown": -0.13662758133950637,
+        "winRate": 0.6075439242299526,
+        "initialAmount": 1000000.0,
+        "finalAmount": 1233195.5278059964,
+        "returnRate": 23.319552780599636
+      },
+      "trainingTime": 70.7035722732544,
+      "modelPath": "outputs\\1cd0ac0d-1846-4c7d-826f-68486bda1c68\\models\\PPO\\model.zip"
+    },
+    {
+      "algorithm": "DQN",
+      "status": "completed",
+      "metrics": {
+        "totalReward": 278330.00479417667,
+        "sharpeRatio": 1.3421781416355343,
+        "maxDrawdown": -0.14807069137785933,
+        "winRate": 0.5976030710198221,
+        "initialAmount": 1000000.0,
+        "finalAmount": 1278330.0047941767,
+        "returnRate": 27.83300047941767
+      },
+      "trainingTime": 63.14296770095825,
+      "modelPath": "outputs\\1cd0ac0d-1846-4c7d-826f-68486bda1c68\\models\\DQN\\model.zip"
+    },
+    {
+      "algorithm": "A2C",
+      "status": "completed",
+      "metrics": {
+        "totalReward": 230035.43735246497,
+        "sharpeRatio": 1.4932928352641666,
+        "maxDrawdown": -0.15168173305490443,
+        "winRate": 0.5682873855208815,
+        "initialAmount": 1000000.0,
+        "finalAmount": 1230035.437352465,
+        "returnRate": 23.0035437352465
+      },
+      "trainingTime": 44.19905757904053,
+      "modelPath": "outputs\\1cd0ac0d-1846-4c7d-826f-68486bda1c68\\models\\A2C\\model.zip"
+    },
+    {
+      "algorithm": "SAC",
+      "status": "completed",
+      "metrics": {
+        "totalReward": 267283.71090529626,
+        "sharpeRatio": 1.7675279667040182,
+        "maxDrawdown": -0.1495274793551572,
+        "winRate": 0.6264678457034952,
+        "initialAmount": 1000000.0,
+        "finalAmount": 1267283.7109052963,
+        "returnRate": 26.728371090529627
+      },
+      "trainingTime": 175.30805015563965,
+      "modelPath": "outputs\\1cd0ac0d-1846-4c7d-826f-68486bda1c68\\models\\SAC\\model.zip"
+    },
+    {
+      "algorithm": "TD3",
+      "status": "completed",
+      "metrics": {
+        "totalReward": 207982.5122609639,
+        "sharpeRatio": 1.2091671806655317,
+        "maxDrawdown": -0.18927658601320244,
+        "winRate": 0.5633642765087721,
+        "initialAmount": 1000000.0,
+        "finalAmount": 1207982.512260964,
+        "returnRate": 20.79825122609639
+      },
+      "trainingTime": 95.46531200408936,
+      "modelPath": "outputs\\1cd0ac0d-1846-4c7d-826f-68486bda1c68\\models\\TD3\\model.zip"
+    }
+  ]
+}

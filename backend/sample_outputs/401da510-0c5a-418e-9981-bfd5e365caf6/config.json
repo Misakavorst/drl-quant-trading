@@ -1,0 +1,23 @@
+{
+  "jobId": "401da510-0c5a-418e-9981-bfd5e365caf6",
+  "symbols": [
+    "AAPL",
+    "DD",
+    "TSLA",
+    "USO",
+    "XBTY"
+  ],
+  "algorithms": [
+    "PPO",
+    "DQN",
+    "A2C",
+    "SAC",
+    "TD3"
+  ],
+  "startDate": "2022-11-09",
+  "endDate": "2025-11-09",
+  "trainTestSplit": 0.8,
+  "totalTimesteps": 10000,
+  "initialAmount": 1000000.0,
+  "createdAt": "2025-11-09 05:02:41"
+}

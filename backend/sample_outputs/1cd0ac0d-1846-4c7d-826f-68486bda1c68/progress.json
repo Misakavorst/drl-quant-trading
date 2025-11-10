@@ -1,0 +1,45 @@
+{
+  "jobId": "1cd0ac0d-1846-4c7d-826f-68486bda1c68",
+  "progress": [
+    {
+      "algorithm": "PPO",
+      "epoch": 10000,
+      "totalEpochs": 10000,
+      "loss": 13875.6953125,
+      "reward": 0.4341595314531336,
+      "status": "completed"
+    },
+    {
+      "algorithm": "DQN",
+      "epoch": 10000,
+      "totalEpochs": 10000,
+      "loss": 36.796058654785156,
+      "reward": 0.14830515902598387,
+      "status": "completed"
+    },
+    {
+      "algorithm": "A2C",
+      "epoch": 10000,
+      "totalEpochs": 10000,
+      "loss": -0.015841998159885406,
+      "reward": 0.42894240591277927,
+      "status": "completed"
+    },
+    {
+      "algorithm": "SAC",
+      "epoch": 10000,
+      "totalEpochs": 10000,
+      "loss": -226.57525634765625,
+      "reward": 0.39234365789335945,
+      "status": "completed"
+    },
+    {
+      "algorithm": "TD3",
+      "epoch": 10000,
+      "totalEpochs": 10000,
+      "loss": -124.90125274658203,
+      "reward": 0.45318603250559236,
+      "status": "completed"
+    }
+  ]
+}
