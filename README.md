@@ -77,6 +77,44 @@ Visit `http://localhost:3000` to access the application.
 
 📖 **Detailed guide**: See [QUICKSTART.md](QUICKSTART.md)
 
+### Use Sample Outputs (Optional)
+
+To quickly explore the app without running training, you can use pre-generated sample outputs:
+
+1. Ensure the backend has created the `backend/outputs/` directory (it is auto-created on start).
+2. Copy the contents of `backend/sample_outputs/` into `backend/outputs/`:
+
+```powershell
+# Windows PowerShell (from repo root)
+Copy-Item -Recurse -Force backend\sample_outputs\* backend\outputs\
+```
+
+```bash
+# macOS/Linux
+cp -R backend/sample_outputs/* backend/outputs/
+```
+
+3. Refresh the frontend; the app will load these sample jobs from `outputs/`.
+
+Sample job structure:
+
+```
+backend/sample_outputs/<job_id>/
+├── config.json
+├── progress.json
+├── results.json
+├── backtest_results.json
+├── data/
+│   ├── train.npz
+│   └── test.npz
+└── models/
+    ├── PPO/model.zip
+    ├── DQN/model.zip
+    ├── A2C/model.zip
+    ├── SAC/model.zip
+    └── TD3/model.zip
+```
+
 ---
 
 ## 📚 Documentation
@@ -122,7 +160,8 @@ drl-quant-trading/
 │   │   ├── routers/     # API endpoints
 │   │   ├── services/    # Business logic
 │   │   └── utils/       # Utilities (logging, storage)
-│   └── outputs/         # Training results & models
+│   ├── outputs/         # Training results & models
+│   └── sample_outputs/  # Pre-generated demo outputs
 │
 ├── frontend/            # React Frontend
 │   └── src/
@@ -165,13 +204,13 @@ drl-quant-trading/
 
 | Algorithm | Return Rate | Sharpe Ratio | Max Drawdown |
 |-----------|-------------|--------------|--------------|
-| PPO | 17.26% | 3.08 | -13.89% |
-| DQN | 42.01% | 2.08 | -9.74% |
-| A2C | 0.00%* | 0.00 | -11.32% |
-| SAC | 29.90% | 2.55 | -18.82% |
-| TD3 | 16.23% | 1.27 | -14.48% |
+| PPO | 9.37% | 2.27 | -9.95% |
+| DQN | 60.69% | 2.08 | -8.93% |
+| A2C | 16.48% | 2.28 | -6.64% |
+| SAC | 25.24% | 1.91 | -12.82% |
+| TD3 | 54.89% | 2.08 | -16.48% |
 
-*A2C issue has been identified and fixed in v2.0
+Source: `backend/sample_outputs/401da510-0c5a-418e-9981-bfd5e365caf6` (values vary with data/settings)
 
 ---
 
@@ -257,6 +296,44 @@ npm run dev
 
 📖 **详细指南**: 参见 [QUICKSTART.md](QUICKSTART.md)
 
+### 使用样例输出（可选）
+
+无需先运行训练即可快速体验应用功能，步骤如下：
+
+1. 确认后端已创建 `backend/outputs/` 目录（启动后端时会自动创建）。
+2. 将 `backend/sample_outputs/` 中的内容复制到 `backend/outputs/`：
+
+```powershell
+# Windows PowerShell（在仓库根目录执行）
+Copy-Item -Recurse -Force backend\sample_outputs\* backend\outputs\
+```
+
+```bash
+# macOS/Linux
+cp -R backend/sample_outputs/* backend/outputs/
+```
+
+3. 刷新前端页面，应用会从 `outputs/` 目录加载这些样例任务。
+
+样例任务目录结构示例：
+
+```
+backend/sample_outputs/<job_id>/
+├── config.json
+├── progress.json
+├── results.json
+├── backtest_results.json
+├── data/
+│   ├── train.npz
+│   └── test.npz
+└── models/
+    ├── PPO/model.zip
+    ├── DQN/model.zip
+    ├── A2C/model.zip
+    ├── SAC/model.zip
+    └── TD3/model.zip
+```
+
 ---
 
 ## 📚 文档
@@ -319,13 +396,13 @@ npm run dev
 
 | 算法 | 回报率 | 夏普比率 | 最大回撤 |
 |------|--------|---------|---------|
-| PPO | 17.26% | 3.08 | -13.89% |
-| DQN | 42.01% | 2.08 | -9.74% |
-| A2C | 0.00%* | 0.00 | -11.32% |
-| SAC | 29.90% | 2.55 | -18.82% |
-| TD3 | 16.23% | 1.27 | -14.48% |
+| PPO | 9.37% | 2.27 | -9.95% |
+| DQN | 60.69% | 2.08 | -8.93% |
+| A2C | 16.48% | 2.28 | -6.64% |
+| SAC | 25.24% | 1.91 | -12.82% |
+| TD3 | 54.89% | 2.08 | -16.48% |
 
-*A2C 问题已在 v2.0 中识别并修复
+数据来源：`backend/sample_outputs/401da510-0c5a-418e-9981-bfd5e365caf6`（不同数据与参数会导致结果差异）
 
 ---
 
